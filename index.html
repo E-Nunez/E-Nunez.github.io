@@ -32,7 +32,7 @@
 						<a class="nav-link" href="#skills">Developer Skills</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#matrix">Projects</a>
+						<a class="nav-link" href="#project">Projects</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#edu">Education</a>
@@ -53,20 +53,27 @@
 		<!-- /Navigation -->
 		
 		<!-- Jumbotron -->
-		<div class="jumbotron jumbotron-fluid">
+		<div class="jumbotron jumbotron-fluid" id="matrix">
 			<div class="container.fluid">
 				<center><h1 class="display-1" id="hello" >"Hello, World!"</h1>
-				<p class="sd">Software Developer</p></center>
+				<p class="sd">Software Developer</p>
+				<br><br>
+				<h3 class="w-50 pt-1 pb-2 bg-dark text-white">Need to Google something while you're on here?<br> Go right ahead!</h3></center><br>
+				<center><form class="form-inline gs" method="get" action="http://www.google.com/search" target="_blank">
+					<input class="form-control mb-3 ml-2" type="text" name="q" size ="" placeholder="Google site search...">
+					<button type="submit" class="btn btn-outline-success ml-2">Go!</button>
+				</form></center>
 			</div>
 		</div>
 		<!-- /Jumbotron -->
 		
 		<!-- Card Group (Developer Skills)-->
+		<section class="bg-warning">
 		<h1 class="display-2" id="skills">Developer Skills</h1>
 		<div class="card-group">
 			<div class="card">
 				<img class="card-img-top" src="./img/one.jpg" alt="Card image cap">
-				<div class="card-body bg-info">
+				<div class="card-body bg-light">
 					<center><h5 class="card-title">Version Control</h5></center>
 					<ul>
 						<li class="card-text">GitHub</li>
@@ -76,18 +83,29 @@
 			</div>
 			<div class="card">
 				<img class="card-img-top" src="./img/two.jpg" alt="Card image cap">
-				<div class="card-body bg-info">
+				<div class="card-body bg-light">
 					<center><h5 class="card-title">HTML/CSS</h5></center>
 					<ul>
-						<li class="card-text">.....</li>
-						<li class="card-text">.....</li>
+						<li class="card-text">HTML5</li>
+						<li class="card-text">CSS3</li>
+						<li class="card-text">Bootstrap4</li>
 					</ul>
 					
 				</div>
 			</div>
 			<div class="card">
 				<img class="card-img-top" src="./img/three.jpg" alt="Card image cap">
-				<div class="card-body bg-info">
+				<div class="card-body bg-light">
+					<center><h5 class="card-title">JavaScript</h5></center>
+					<ul>
+						<li class="card-text">Ajax</li>
+						<li class="card-text">jQuery</li>
+					</ul>
+				</div>
+			</div>
+			<div class="card">
+				<img class="card-img-top" src="" alt="Card image cap">
+				<div class="card-body bg-light">
 					<center><h5 class="card-title">(Skills)</h5></center>
 					<ul>
 						<li class="card-text">.....</li>
@@ -97,17 +115,7 @@
 			</div>
 			<div class="card">
 				<img class="card-img-top" src="" alt="Card image cap">
-				<div class="card-body bg-info">
-					<center><h5 class="card-title">(Skills)</h5></center>
-					<ul>
-						<li class="card-text">.....</li>
-						<li class="card-text">.....</li>
-					</ul>
-				</div>
-			</div>
-			<div class="card">
-				<img class="card-img-top" src="" alt="Card image cap">
-				<div class="card-body bg-info">
+				<div class="card-body bg-light">
 					<center><h5 class="card-title">(Skills)</h5></center>
 					<ul>
 						<li class="card-text">.....</li>
@@ -116,38 +124,34 @@
 				</div>
 			</div>
 		</div>
+		</section>
 		<!-- /Card Group (Developer Skills) -->
 		
 		<!-- Slideshow (Projects) -->
-		<section id="matrix">
+		<section class="bg-success" id="project">
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators">
-					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-				</ol>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
 						<center><img class="d-block" src="./img/one.jpg" alt="First slide"></center>
 						<div class="carousel-caption d-none d-md-block text-warning">
 							<h5>First Project</h5>
-							<p>Details...</p> 			<!-- With Link to Project and Testimonials -->
-							<p><small class="">Last updated ......</small></p>
-						</div>
+							 			<!-- With Link to Project and Testimonials -->
+						</div> <br><br>
+					<center><button type="button" class="btn btn-primary pinfo" data-toggle="modal" data-target="#proj_info1">Project Info..</button></center>
 					</div>
 					<div class="carousel-item">
 						<center><img class="d-block" src="./img/two.jpg" alt="Second slide"></center>
 						<div class="carousel-caption d-none d-md-block text-warning">
 							<h5>Second Project</h5>
-							<p>Details</p>
-						</div>
+						</div> <br><br>
+						<center><button type="button" class="btn btn-primary pinfo" data-toggle="modal" data-target="#proj_info2">Project Info..</button></center>
 					</div>
 					<div class="carousel-item">
 						<center><img class="d-block" src="./img/three.jpg" alt="Third slide"></center>
 						<div class="carousel-caption d-none d-md-block text-warning">
 							<h5>Third Project</h5>
-							<p>Details...</p>
-						</div>
+						</div> <br><br>
+						<center><button type="button" class="btn btn-primary pinfo" data-toggle="modal" data-target="#proj_info3">Project Info..</button></center>
 					</div>
 				</div>
 				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -162,19 +166,82 @@
 		</section>
 		<!-- /Slideshow (Projects)-->
 		
+		<!-- Modal for Project Info -->
+			<!-- proj_info1-->
+			<div class="modal fade" id="proj_info1" tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">Project 1</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<p>Details about the Project 1...</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /proj_info1 -->
+			<!-- proj_info2 -->
+			<div class="modal fade" id="proj_info2" tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">Project 2</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<p>Details about the Project 2...</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /proj_info2 -->
+			<!-- proj_info3 -->
+			<div class="modal fade" id="proj_info3" tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">Project 3</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<p>Details about the Project 3...</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /proj_info3 -->
+		<!-- /Modal for Project Info -->
+		
 		<!-- (Education) -->   <!-- bootcamp learned version control, HTML & CSS, JavaScript, Database & SQL, Visual Studio, C# and ASP.Net -->
-		<div class="jumbotron">
+		<div class="jumbotron jumbotron-fluid">
 			<h1 class="display-2" id="edu">Education</h1>
 			<p class="lead">.....</p>
-			<a class="btn btn-primary btn-lg" href="#" role="button">The Tech Academy</a>
+			<button type="button" class="btn btn-secondary btn-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="The Tech Academy is a code school that was founded in 2014 by Erik Gross and Jack Stanley. Their Software Developer Boot Camp is available online in full and they have campuses in Portland, Oregon and Seattle, Washington. Students can attend in-person or study online from home.">The Tech Academy</button>
 			<hr class="my-4">
 			<p>.....</p>
 			<a class="btn btn-primary btn-lg" href="#" role="button">.....</a>
 		</div>
 		
 		<!-- /(Education) -->
-		<hr id="contact_me">
 		<!-- Form (Contact) -->
+		<div class="jumbotron jumbotron-fluid bg-info" id="contact_me">
 		<div id="contact">
 			<div class="form-header">Contact Me</div>
 			<form>
@@ -183,8 +250,9 @@
 				<input type="text" class="txt" id="" placeholder="Phone #"></input><br>
 				<input type="text" class="txt" id="" placeholder="Project"></input><br>
 				<input type="text" class="msg" id="" placeholder="Message"></input></center>
-				<button type="button" class="btn">Submit</button>
+				<button type="button" class="btn contact_btn">Submit</button>
 			</form>
+		</div>
 		</div>
 		<!-- /Form (Contact) -->
 
@@ -200,5 +268,12 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  
+	<script>
+	$('.popover-dismiss').popover({
+		trigger: 'focus'
+	})
+	</script>
+  
   </body>
 </html>
