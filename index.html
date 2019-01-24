@@ -13,14 +13,44 @@
 	<link rel="stylesheet" href="./css/port_styles.css">
   </head>
   <body>
+  
+  <nav class="sidenav">
+			<ul>
+				<li>
+					<a href="#" style="font-size: 35px;">Eric Nu&ntilde;ez</a>
+				</li>
+				<li>
+					<a href="#skills">Developer Skills</a>
+				</li>
+				<li>
+					<a href="#project">Projects</a>
+				</li>
+				<li>
+					<a href="#edu">Education</a>
+				</li>
+				<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About Me</a>
+						<div class="dropdown-menu" style="background-color: rgb(20,65,25);">
+							<a class="dropdown-item" href="https://www.github.com/E-Nunez" target="_blank">GitHub</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#contact_me">Contact</a>
+						</div>
+					</li>
+			</ul>
+		</nav>
+  
+  
 	<!-- Page Content-->
-	<div class="container.fluid">
+	<div class="container.fluid" style="margin-left: 175px;">
 	
 	
 	
 	
 	
 		<!-- Navigation -->
+		
+		
+		<!--
 		<nav class="navbar navbar-expand-md fixed-top navbar-dark" style="background-color: rgb(0,0,0);">
 			<a class="navbar-brand" href="#">Eric Nu&ntilde;ez</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,9 +70,7 @@
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About Me</a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="#">GitHub</a>
-							<a class="dropdown-item" href="#">LinkedIn</a>
-							<a class="dropdown-item" href="#">...</a>
+							<a class="dropdown-item" href="https://www.github.com/E-Nunez" target="_blank">GitHub</a>
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="#contact_me">Contact</a>
 						</div>
@@ -50,76 +78,86 @@
 				</ul>
 			</div>
 		</nav>
+		-->
+		
 		<!-- /Navigation -->
 		
 		<!-- Jumbotron -->
 		<div class="jumbotron jumbotron-fluid" id="matrix">
 			<div class="container.fluid">
-				<center><h1 class="display-1" id="hello" >"Hello, World!"</h1>
-				<p class="sd">Software Developer</p>
+				<h1 class="display-1" id="hello" >"Hello, World!"</h1>
+				<p class="sd">-Software Developer</p>
 				<br><br>
-				<h3 class="w-50 pt-1 pb-2 bg-dark text-white">Need to Google something while you're on here?<br> Go right ahead!</h3></center><br>
-				<center><form class="form-inline gs" method="get" action="http://www.google.com/search" target="_blank">
-					<input class="form-control mb-3 ml-2" type="text" name="q" size ="" placeholder="Google site search...">
-					<button type="submit" class="btn btn-outline-success ml-2">Go!</button>
-				</form></center>
+				<div class="google">
+					<p class="text-white text-center" style="margin-bottom: -15px; font-size: 13px; font-weight: bold;">Need to Google something while you're on here?<br> Go right ahead!</p><br>
+					<form class="form-inline gs" method="get" action="http://www.google.com/search" target="_blank">
+						<input class="form-control mb-3 ml-2" type="text" name="q" size ="" placeholder="Google site search...">
+						<button type="submit" class="btn btn-outline-success ml-2">Search</button>
+					</form>
+				</div>
 			</div>
 		</div>
 		<!-- /Jumbotron -->
 		
 		<!-- Card Group (Developer Skills)-->
-		<section class="bg-warning">
+		<section class="bg-secondary">
 		<h1 class="display-2" id="skills">Developer Skills</h1>
 		<div class="card-group">
 			<div class="card">
-				<img class="card-img-top" src="./img/one.jpg" alt="Card image cap">
-				<div class="card-body bg-light">
+				<img class="card-img-top" src="./img/version.control.png" alt="Card image cap" style="padding-top: 40px;">
+				<div class="card-body bg-light" style="margin-top: 35px;">
 					<center><h5 class="card-title">Version Control</h5></center>
 					<ul>
-						<li class="card-text">GitHub</li>
-						<li class="card-text">Git Bash</li>
+						<li class="card-text">-GitHub</li>
+						<li class="card-text">-Git Bash</li>
 					</ul>
 				</div>
 			</div>
 			<div class="card">
-				<img class="card-img-top" src="./img/two.jpg" alt="Card image cap">
+				<img class="card-img-top" src="./img/html.png" alt="Card image cap">
 				<div class="card-body bg-light">
 					<center><h5 class="card-title">HTML/CSS</h5></center>
 					<ul>
-						<li class="card-text">HTML5</li>
-						<li class="card-text">CSS3</li>
-						<li class="card-text">Bootstrap4</li>
+						<li class="card-text">-HTML5</li>
+						<li class="card-text">-CSS3</li>
+						<li class="card-text">-Bootstrap4</li>
 					</ul>
 					
 				</div>
 			</div>
 			<div class="card">
-				<img class="card-img-top" src="./img/three.jpg" alt="Card image cap">
+				<img class="card-img-top" src="./img/js.png" alt="Card image cap">
 				<div class="card-body bg-light">
 					<center><h5 class="card-title">JavaScript</h5></center>
 					<ul>
-						<li class="card-text">Ajax</li>
-						<li class="card-text">jQuery</li>
+						<li class="card-text">-Ajax</li>
+						<li class="card-text">-jQuery</li>
+						<li class="card-text">-Knockout.js</li>
 					</ul>
 				</div>
 			</div>
 			<div class="card">
-				<img class="card-img-top" src="" alt="Card image cap">
+				<img class="card-img-top" src="./img/sql.png" alt="Card image cap">
 				<div class="card-body bg-light">
-					<center><h5 class="card-title">(Skills)</h5></center>
+					<center><h5 class="card-title">SQL</h5></center>
 					<ul>
-						<li class="card-text">.....</li>
-						<li class="card-text">.....</li>
+						<li class="card-text">-Database</li>
+						<li class="card-text">-Structured Query Language</li>
+						<li class="card-text">-SQL Server</li>
+						<li class="card-text">-MySQL</li>
 					</ul>
 				</div>
 			</div>
 			<div class="card">
-				<img class="card-img-top" src="" alt="Card image cap">
+				<img class="card-img-top" src="./img/csharp.png" alt="Card image cap">
 				<div class="card-body bg-light">
-					<center><h5 class="card-title">(Skills)</h5></center>
+					<center><h5 class="card-title">C# & .Net Framework</h5></center>
 					<ul>
-						<li class="card-text">.....</li>
-						<li class="card-text">.....</li>
+						<li class="card-text">-Visual Studio</li>
+						<li class="card-text">-Object-Oriented Programming</li>
+						<li class="card-text">-Entity Framework</li>
+						<li class="card-text">-Debugging</li>
+						<li class="card-text">-MVC/MVVM</li>
 					</ul>
 				</div>
 			</div>
@@ -128,19 +166,19 @@
 		<!-- /Card Group (Developer Skills) -->
 		
 		<!-- Slideshow (Projects) -->
-		<section class="bg-success" id="project">
+		<section id="project">
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<center><img class="d-block" src="./img/one.jpg" alt="First slide"></center>
+						<center><img class="d-block" src="./img/TechAcademy.png" alt="First slide"></center>
 						<div class="carousel-caption d-none d-md-block text-warning">
-							<h5>First Project</h5>
+							<h5>Live Project</h5>
 							 			<!-- With Link to Project and Testimonials -->
 						</div> <br><br>
 					<center><button type="button" class="btn btn-primary pinfo" data-toggle="modal" data-target="#proj_info1">Project Info..</button></center>
 					</div>
 					<div class="carousel-item">
-						<center><img class="d-block" src="./img/two.jpg" alt="Second slide"></center>
+						<center><img class="d-block" src="./img/CustomTable.png" alt="Second slide"></center>
 						<div class="carousel-caption d-none d-md-block text-warning">
 							<h5>Second Project</h5>
 						</div> <br><br>
@@ -172,7 +210,7 @@
 				<div class="modal-dialog" role="document">
 					<div class="modal-content">
 						<div class="modal-header">
-							<h5 class="modal-title" id="exampleModalLabel">Project 1</h5>
+							<h5 class="modal-title" id="exampleModalLabel">Live Project</h5>
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 								<span aria-hidden="true">&times;</span>
 							</button>
@@ -230,19 +268,16 @@
 		<!-- /Modal for Project Info -->
 		
 		<!-- (Education) -->   <!-- bootcamp learned version control, HTML & CSS, JavaScript, Database & SQL, Visual Studio, C# and ASP.Net -->
-		<div class="jumbotron jumbotron-fluid">
-			<h1 class="display-2" id="edu">Education</h1>
+		<div class="jumbotron jumbotron-fluid" id="edu">
+			<h1 class="display-2 text-center">Education</h1>
+			<button type="button" class="btn btn-secondary btn-info popover-dismiss" style="width: 250px; height: 60px; font-size: 25px; margin-left: 25px;" data-container="body" data-toggle="popover" data-placement="top" data-content="The Tech Academy is a code school that was founded in 2014 by Erik Gross and Jack Stanley. Their Software Developer Boot Camp is available online in full and they have campuses in Portland, Oregon and Seattle, Washington. Students can attend in-person or study online from home.">The Tech Academy</button>
 			<p class="lead">.....</p>
-			<button type="button" class="btn btn-secondary btn-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="The Tech Academy is a code school that was founded in 2014 by Erik Gross and Jack Stanley. Their Software Developer Boot Camp is available online in full and they have campuses in Portland, Oregon and Seattle, Washington. Students can attend in-person or study online from home.">The Tech Academy</button>
-			<hr class="my-4">
-			<p>.....</p>
-			<a class="btn btn-primary btn-lg" href="#" role="button">.....</a>
 		</div>
 		
 		<!-- /(Education) -->
 		<!-- Form (Contact) -->
 		<div class="jumbotron jumbotron-fluid bg-info" id="contact_me">
-		<div id="contact">
+		<center><div id="contact">
 			<div class="form-header">Contact Me</div>
 			<form>
 				<center><input type="text" class="txt" id="" placeholder="Name"></input><br>
@@ -252,16 +287,11 @@
 				<input type="text" class="msg" id="" placeholder="Message"></input></center>
 				<button type="button" class="btn contact_btn">Submit</button>
 			</form>
-		</div>
+		</div></center>
 		</div>
 		<!-- /Form (Contact) -->
 
 
-	
-	
-	
-	
-	
     </div>
 	<!-- /Page Content -->
     <!-- jQuery, Popper.js, and Bootstrap JS -->
