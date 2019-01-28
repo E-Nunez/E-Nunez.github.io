@@ -98,7 +98,7 @@ ul {
 	text-decoration: underline;
 	padding: 75px 0 50px 0;
 }
-.card-body {
+.card-group .card-body {
 	height: 250px;
 }
 .card-group img {
@@ -109,11 +109,11 @@ ul {
 	max-height: 75%;
 }
 
-.card-text {
+.card-group .card-text {
 	margin-left: 10%;
 }
 
-.card-title {
+.card-group .card-title {
 	text-decoration: underline overline;
 }
 
@@ -143,12 +143,6 @@ ul {
 .jumbotron {
 	height: 700px;
 	max-height: 700px;
-}
-
-#edu {
-	font-family: "Times New Roman";
-	text-decoration: underline;
-	font-weight: bold;
 }
 
 /*===========================
