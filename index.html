@@ -22,9 +22,9 @@
 		<nav class="sidenav">
 			<ul>
 				<li>
-					<a href="#" style="font-size: 35px;">Eric Nu&ntilde;ez</a>
+					<a href="#" style="font-size: 70px; text-align: center; color: #000;">EN</a>
 				</li>
-				<li>
+				<li style="margin-top: 15px;">
 					<a href="#skills"><i class="fab fa-connectdevelop"></i><p>Skills</p></a>
 				</li>
 				<li>
@@ -33,21 +33,22 @@
 				<li>
 					<a href="#edu"><i class="fas fa-graduation-cap"></i><p>Education</p></a>
 				</li>
-				<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i></a>
-						<div class="dropdown-menu" style="background-color: #000;">
-							<a class="dropdown-item" href="https://www.github.com/E-Nunez" target="_blank"><i class="fab fa-github"></i><p>GitHub</p></a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#contact_me"><i class="fas fa-envelope"></i><p>Contact</p></a>
-						</div>
-					</li>
+				<li>
+					<a href="#contact_me"><i class="fas fa-envelope"></i><p>Contact</p></a>
+				</li>
+				<li style="position: fixed; bottom: 0; width: 100px;">
+					<a href="https://www.github.com/E-Nunez" target="_blank"><i class="fab fa-github"></i><p>GitHub</p></a>
+				</li>
+				<li style="position: fixed; bottom: 65px; width: 100px;">
+					<a href="#" target="_blank"><i class="fab fa-linkedin"></i><p>LinkedIn</p></a>
+				</li>
 			</ul>
 		</nav>
 	<!-- /Navigation -->
   
   
 	<!-- Page Content-->
-	<div class="container.fluid" style="margin-left: 185px;">
+	<div class="container.fluid" style="margin-left: 100px;">
 	
 		
 		<!-- Jumbotron -->
@@ -55,7 +56,7 @@
 			<div class="container.fluid">
 				<h1 class="display-1" id="hello" >"Hello, World!"</h1>
 				<p class="sd">-Software Developer</p>
-				<br><br>
+				<h1 class= "text-white float-right" style="position: relative; bottom: 200px; margin-right: 20px; border: 5px solid #fff"> Eric Nu&ntilde;ez </h1>
 				<div class="google">
 					<p class="text-white text-center" style="margin-bottom: -15px; font-size: 13px; font-weight: bold;">Need to Google something while you're on here?<br> Go right ahead!</p><br>
 					<form class="form-inline gs" method="get" action="http://www.google.com/search" target="_blank">
@@ -259,12 +260,12 @@
 		trigger: 'focus'
 	});
 	
-	$(".sidenav li:nth-child(2), .sidenav li:nth-child(3), .sidenav li:nth-child(4), .sidenav .dropdown-menu a").mouseenter(function() {
+	$(".sidenav li").mouseenter(function() {
 		$("i", this).hide();
 		$("p", this).show();
 	});
 	
-	$(".sidenav li:nth-child(2), .sidenav li:nth-child(3), .sidenav li:nth-child(4), .sidenav .dropdown-menu a").mouseleave(function() {
+	$(".sidenav li").mouseleave(function() {
 		$("i", this).show();
 		$("p", this).hide();
 	});

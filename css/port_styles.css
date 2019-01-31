@@ -9,7 +9,7 @@ ul {
 
 .sidenav {
 	height: 100%;
-	width: 185px;
+	width: 100px;
 	position: fixed;
 	z-index: 1;
 	top: 0;
@@ -19,27 +19,50 @@ ul {
 }
 
 .sidenav a {
-	padding: 10px 15px 10px 25px;
+	padding: 10px 0px 10px 0px;
+	margin-bottom: 18px;
 	text-decoration: none;
-	font-size: 23px;
+	text-align: center;
+	font-size: 30px;
 	color: #fff;
 	display: block;
 	max-height: 50px;
 }
 
 .sidenav p {
-	display: none;
+	opacity: 0;
+	font-style: italic;
+	font-size: 23px;
+	padding: 10px 0px 10px 0px;
+}
+
+.sidenav p:hover {
+	opacity: 1;
+	transition: 0.7s ease-in;
 }
 
 .sidenav ul li:first-child {
-	height: 150px;
+	height: 130px;
 	background-color: rgb(30,30,30);
 	border-bottom: 2px solid #fff;
+	text-shadow:
+       1px 1px 0 #fff,
+     -1px -1px 0 #fff,  
+      1px -1px 0 #fff,
+      -1px 1px 0 #fff,
+       1px 1px 0 #fff;
 }
 
 
 .sidenav ul li:first-child a:hover {
 	font-weight: bold;
+	text-shadow:
+       2px 2px 4px #fff,
+     -2px -2px 4px #fff,  
+      2px -2px 4px #fff,
+      -2px 2px 4px #fff,
+       2px 2px 4px #fff;
+	   transition: 0.2s ease-out;
 }
 
 /*===========================
@@ -73,7 +96,7 @@ ul {
 .google {
 	width: 325px;
 	position: relative;
-	top: 300px;
+	top: 350px;
 }
 
 .gs {
