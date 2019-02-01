@@ -48,28 +48,28 @@
   
   
 	<!-- Page Content-->
-	<div class="container.fluid" style="margin-left: 100px;">
+	<div style="margin-left: 100px;">
 	
 		
 		<!-- Jumbotron -->
-		<div class="jumbotron jumbotron-fluid" id="matrix">
-			<div class="container.fluid">
-				<h1 class="display-1" id="hello" >"Hello, World!"</h1>
+		<div id="matrix">
+			<div class="container.fluid" style="margin-left: 20px;">
+				<h1 class="display-1" id="hello" >"Hello, World!"</h1><span class="text-white" id="welcome" style="display: none; font-family: 'SFPixelateRegular', 'Times New Roman', Arial; font-size: 70px; font-style: italic; font-weight: bold;"></span>
 				<p class="sd">-Software Developer</p>
-				<h1 class= "text-white float-right" style="position: relative; bottom: 200px; margin-right: 20px; border: 5px solid #fff"> Eric Nu&ntilde;ez </h1>
-				<div class="google">
+				<h1 class= "text-white float-right" style="position: relative; bottom: 170px; margin-right: 40px; border: 5px solid #fff">Eric Nu&ntilde;ez</h1>
+			</div>
+			<div class="google">
 					<p class="text-white text-center" style="margin-bottom: -15px; font-size: 13px; font-weight: bold;">Need to Google something while you're on here?<br> Go right ahead!</p><br>
 					<form class="form-inline gs" method="get" action="http://www.google.com/search" target="_blank">
 						<input class="form-control mb-3 ml-2" type="text" name="q" size ="" placeholder="Google site search...">
 						<button type="submit" class="btn btn-outline-success ml-2">Search</button>
 					</form>
-				</div>
 			</div>
 		</div>
 		<!-- /Jumbotron -->
 		
 		<!-- Card Group (Developer Skills)-->
-		<section class="bg-secondary">
+		<section class="devskills bg-secondary">
 		<h1 class="display-2" id="skills">Developer Skills</h1>
 		<div class="card-group">
 			<div class="card">
@@ -210,10 +210,10 @@
 		<!-- /Modal for Project Info -->
 		
 		<!-- (Education) -->   <!-- bootcamp learned version control, HTML & CSS, JavaScript, Database & SQL, Visual Studio, C# and ASP.Net -->
-		<div class="jumbotron jumbotron-fluid" id="edu">
+		<div id="edu">
 			<h1 class="display-2 text-center" style="font-family: 'Times New Roman'; text-decoration: underline; font-weight: bold;">Education</h1>
 			
-			<div class="card ml-5 mt-4 shadow-lg" style="width: 18rem;">
+			<div class="card shadow-lg" style="width: 18rem; margin-left: 100px; margin-top: 50px;">
 				<div class="card-body">
 					<button type="button" class="card-title btn popover-dismiss" style="background-color: #004171; width: 250px; height: 60px; font-size: 25px; color: #d98d2a;" 
 					data-container="body" data-toggle="popover" data-placement="top" data-content="The Tech Academy is a code school that was founded in 2014 by Erik Gross and Jack Stanley. 
@@ -232,18 +232,18 @@
 		
 		<!-- /(Education) -->
 		<!-- Form (Contact) -->
-		<div class="jumbotron jumbotron-fluid bg-info" id="contact_me">
-		<center><div id="contact">
+		<div class="bg-info" id="contact_me">
+		<div id="contact">
 			<div class="form-header">Contact Me</div>
 			<form>
-				<center><input type="text" class="txt" id="" placeholder="Name"></input><br>
+		<center><input type="text" class="txt" id="" placeholder="Name"></input><br>
 				<input type="text" class="txt" id="" placeholder="Email"></input><br>
 				<input type="text" class="txt" id="" placeholder="Phone #"></input><br>
 				<input type="text" class="txt" id="" placeholder="Project"></input><br>
 				<input type="text" class="msg" id="" placeholder="Message"></input></center>
 				<button type="button" class="btn contact_btn">Submit</button>
 			</form>
-		</div></center>
+		</div>
 		</div>
 		<!-- /Form (Contact) -->
 
@@ -269,6 +269,26 @@
 		$("i", this).show();
 		$("p", this).hide();
 	});
+	
+	$("#hello").mouseenter(function() {
+		$(this).hide();
+		$("#welcome").show();
+		$("#welcome").writeText("Welcome to my Portfolio!");
+	});
+	
+	(function($) {
+		$.fn.writeText = function(content) {
+			var contentArray = content.split(""),
+			current = 0,
+			elem = this;
+			setInterval(function() {
+				if(current < contentArray.length) {
+					elem.text(elem.text() + contentArray[current++]);
+				}
+			}, 100);
+		};
+	})(jQuery);
+	
 	
 	</script>
   
