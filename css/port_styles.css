@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 /*===========================
 	NAVIGATION
 =============================*/
@@ -7,7 +11,7 @@ ul {
 	padding: 0;
 }
 
-.sidenav {
+#sidenav {
 	height: 100%;
 	width: 100px;
 	position: fixed;
@@ -18,7 +22,7 @@ ul {
 	overflow-x: hidden;
 }
 
-.sidenav a {
+#sidenav a {
 	padding: 10px 0px 10px 0px;
 	margin-bottom: 18px;
 	text-decoration: none;
@@ -26,22 +30,22 @@ ul {
 	font-size: 30px;
 	color: #fff;
 	display: block;
-	max-height: 50px;
+	height: 65px;
 }
 
-.sidenav p {
+#sidenav p {
 	opacity: 0;
 	font-style: italic;
 	font-size: 23px;
 	padding: 10px 0px 10px 0px;
 }
 
-.sidenav p:hover {
+#sidenav p:hover {
 	opacity: 1;
 	transition: 0.7s ease-in;
 }
 
-.sidenav ul li:first-child {
+#sidenav ul li:first-child {
 	height: 130px;
 	background-color: rgb(30,30,30);
 	border-bottom: 2px solid #fff;
@@ -54,7 +58,7 @@ ul {
 }
 
 
-.sidenav ul li:first-child a:hover {
+#sidenav ul li:first-child a:hover {
 	font-weight: bold;
 	text-shadow:
        2px 2px 4px #fff,
@@ -63,6 +67,15 @@ ul {
       -2px 2px 4px #fff,
        2px 2px 4px #fff;
 	   transition: 0.2s ease-out;
+}
+
+#sidenav ul li a.active {
+	background-image: radial-gradient(circle, black 30%, white);
+	border: 2px solid #fff;
+	box-shadow: 5px 5px 10px #fff,
+				5px -5px 10px #fff,
+				-5px 5px 10px #fff,
+				-5px -5px 10px #fff;
 }
 
 /*===========================
@@ -82,8 +95,21 @@ ul {
 }
 
 #hello {
+	margin-left: 20px;
 	color: white;
 	font-family: 'SFPixelateRegular', "Times New Roman", Arial;
+	position: absolute;
+	top: 0;
+}
+
+#welcome {
+	display: none;
+	font-family: 'SFPixelateRegular', 'Times New Roman', Arial;
+	font-size: 70px;
+	font-style: italic;
+	font-weight: bold;
+	position: absolute;
+	top: 0;
 }
 
 .sd {
@@ -91,12 +117,15 @@ ul {
 	font-family: "Brush Script MT", "Apple Chancery", cursive;
 	font-style: italic;
 	font-size: 30px;
+	margin-left: 20px;
+	position: relative;
+	top: 120px;
 }
 
 .google {
 	width: 325px;
 	position: relative;
-	top: 585px;
+	top: 700px;
 }
 
 .gs {
@@ -232,5 +261,8 @@ form .contact_btn {
 
 form .contact_btn:hover {
 	border: 3px solid #fff;
-	box-shadow: 5px 5px 10px #000, 5px -5px 10px #000, -5px 5px 10px #000, -5px -5px 10px #000;
+	box-shadow: 5px 5px 10px #000,
+				5px -5px 10px #000,
+				-5px 5px 10px #000,
+				-5px -5px 10px #000;
 }

@@ -19,13 +19,13 @@
   <body>
   
 	<!-- Navigation -->
-		<nav class="sidenav">
+		<nav id="sidenav">
 			<ul>
 				<li>
 					<a href="#" style="font-size: 70px; text-align: center; color: #000;">EN</a>
 				</li>
 				<li style="margin-top: 15px;">
-					<a href="#skills"><i class="fab fa-connectdevelop"></i><p>Skills</p></a>
+					<a href="#1"><i class="fab fa-connectdevelop"></i><p>Skills</p></a>
 				</li>
 				<li>
 					<a href="#project"><i class="fas fa-project-diagram"></i><p>Projects</p></a>
@@ -52,12 +52,10 @@
 	
 		
 		<!-- Jumbotron -->
-		<div id="matrix">
-			<div class="container.fluid" style="margin-left: 20px;">
-				<h1 class="display-1" id="hello" >"Hello, World!"</h1><span class="text-white" id="welcome" style="display: none; font-family: 'SFPixelateRegular', 'Times New Roman', Arial; font-size: 70px; font-style: italic; font-weight: bold;"></span>
-				<p class="sd">-Software Developer</p>
-				<h1 class= "text-white float-right" style="position: relative; bottom: 170px; margin-right: 40px; border: 5px solid #fff">Eric Nu&ntilde;ez</h1>
-			</div>
+		<section class="target" id="matrix">
+			<h1 class="display-1" id="hello" >"Hello, World!"</h1><span class="text-white" id="welcome"><p class="pt-3"></p></span>
+			<p class="sd">-Software Developer</p>
+			<h1 class= "text-white float-right" style="position: relative; bottom: 30px; margin-right: 40px; border: 5px solid #fff">Eric Nu&ntilde;ez</h1>
 			<div class="google">
 					<p class="text-white text-center" style="margin-bottom: -15px; font-size: 13px; font-weight: bold;">Need to Google something while you're on here?<br> Go right ahead!</p><br>
 					<form class="form-inline gs" method="get" action="http://www.google.com/search" target="_blank">
@@ -65,11 +63,11 @@
 						<button type="submit" class="btn btn-outline-success ml-2">Search</button>
 					</form>
 			</div>
-		</div>
+		</section>
 		<!-- /Jumbotron -->
 		
 		<!-- Card Group (Developer Skills)-->
-		<section class="devskills bg-secondary">
+		<section class="target devskills bg-secondary" id="1">
 		<h1 class="display-2" id="skills">Developer Skills</h1>
 		<div class="card-group">
 			<div class="card">
@@ -135,7 +133,7 @@
 		<!-- /Card Group (Developer Skills) -->
 		
 		<!-- Slideshow (Projects) -->
-		<section id="project">
+		<section class="target" id="project">
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
@@ -178,7 +176,9 @@
 							</button>
 						</div>
 						<div class="modal-body">
-							<p>Details about the Project 1...</p>
+							<p>For my final project at The Tech Academy, I worked remotely with a development team of my peers on a full-scale 
+								MVC/MVVM of the schools website in C#. I was able to gain some real life like experience while working on this 
+								project.</p>
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -192,13 +192,16 @@
 				<div class="modal-dialog" role="document">
 					<div class="modal-content">
 						<div class="modal-header">
-							<h5 class="modal-title" id="exampleModalLabel">Project 2</h5>
+							<h5 class="modal-title" id="exampleModalLabel">Custom Table</h5>
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 								<span aria-hidden="true">&times;</span>
 							</button>
 						</div>
 						<div class="modal-body">
-							<p>Details about the Project 2...</p>
+							<p>I chose to create this Web Application using knockout.js and I learned that it is a very useful JavaScript 
+								library to build a strong, rich, responsive single page application with binding and dependency tracking.
+								It is a simple build your own table where you can input information and build any kind of table 
+								of your preference.</p>
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -210,12 +213,12 @@
 		<!-- /Modal for Project Info -->
 		
 		<!-- (Education) -->   <!-- bootcamp learned version control, HTML & CSS, JavaScript, Database & SQL, Visual Studio, C# and ASP.Net -->
-		<div id="edu">
-			<h1 class="display-2 text-center" style="font-family: 'Times New Roman'; text-decoration: underline; font-weight: bold;">Education</h1>
+		<section class="target" id="edu">
+			<h1 class="display-2 text-center" style="padding-top: 75px; font-family: 'Times New Roman'; text-decoration: underline; font-weight: bold;">Education</h1>
 			
-			<div class="card shadow-lg" style="width: 18rem; margin-left: 100px; margin-top: 50px;">
+			<div class="card shadow-lg" style="width: auto; margin: 50px 100px 0 100px;">
 				<div class="card-body">
-					<button type="button" class="card-title btn popover-dismiss" style="background-color: #004171; width: 250px; height: 60px; font-size: 25px; color: #d98d2a;" 
+			<center><button type="button" class="card-title btn popover-dismiss" style="background-color: #004171; width: 250px; height: 60px; font-size: 25px; color: #d98d2a;" 
 					data-container="body" data-toggle="popover" data-placement="top" data-content="The Tech Academy is a code school that was founded in 2014 by Erik Gross and Jack Stanley. 
 																									Recipient of SwitchUp.Org's Best Coding Boot Camp award in 2017 and 2018. 
 																									Their Software Developer Boot Camp is available online in full and they have campuses in Portland, 
@@ -224,27 +227,39 @@
 						The Tech Academy
 					</button>
 					<h6 class="card-subtitle mb-2 text-muted">Portland, Oregon</h6>
-					<p class="card-text">.............</p>
-					<a href="https://learncodinganywhere.com/" target="_blank" class="card-link float-right"><img src="./img/TechIcon.ico" alt="The Tech Academy" height="" width=""></a>
+					<p class="card-text">I attended a Software Developer Boot Camp at The Tech Academy. During my time here I studied
+										 and learned the basics and fundamentals of computer programming and web development. The list of courses I took are listed <a role="button" tabindex="0" class="popover-dismiss" data-toggle="popover" title="The Tech Academy Courses"
+										 data-html="true" data-content="-Computer & Technology Basics<br />
+														-Overview of Software Development<br />
+														-Version Control<br />
+														-HTML & CSS<br />
+														-JavaScript<br />
+														-Database & SQL<br />
+														-Visual Studio<br />
+														-C# & .Net Framework<br />
+														-Project Management<br />
+														-Live Project<br />
+														-Job Placement">here.</a></p>
+					<a href="https://learncodinganywhere.com/" target="_blank" class="card-link float-right"><img src="./img/TechIcon.ico" alt="The Tech Academy" height="" width=""></a></center>
 				</div>
 			</div>
-		</div>
+		</section>
 		
 		<!-- /(Education) -->
 		<!-- Form (Contact) -->
-		<div class="bg-info" id="contact_me">
-		<div id="contact">
-			<div class="form-header">Contact Me</div>
-			<form>
-		<center><input type="text" class="txt" id="" placeholder="Name"></input><br>
-				<input type="text" class="txt" id="" placeholder="Email"></input><br>
-				<input type="text" class="txt" id="" placeholder="Phone #"></input><br>
-				<input type="text" class="txt" id="" placeholder="Project"></input><br>
-				<input type="text" class="msg" id="" placeholder="Message"></input></center>
-				<button type="button" class="btn contact_btn">Submit</button>
-			</form>
-		</div>
-		</div>
+		<section class="target bg-info" id="contact_me">
+			<div id="contact">
+				<div class="form-header">Contact Me</div>
+				<form>
+			<center><input type="text" class="txt" id="" placeholder="Name"></input><br>
+					<input type="text" class="txt" id="" placeholder="Email"></input><br>
+					<input type="text" class="txt" id="" placeholder="Phone #"></input><br>
+					<input type="text" class="txt" id="" placeholder="Project"></input><br>
+					<input type="text" class="msg" id="" placeholder="Message"></input></center>
+					<button type="button" class="btn contact_btn">Submit</button>
+				</form>
+			</div>
+		</section>
 		<!-- /Form (Contact) -->
 
 
@@ -254,43 +269,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  
-	<script>
-	$('.popover-dismiss').popover({
-		trigger: 'focus'
-	});
-	
-	$(".sidenav li").mouseenter(function() {
-		$("i", this).hide();
-		$("p", this).show();
-	});
-	
-	$(".sidenav li").mouseleave(function() {
-		$("i", this).show();
-		$("p", this).hide();
-	});
-	
-	$("#hello").mouseenter(function() {
-		$(this).hide();
-		$("#welcome").show();
-		$("#welcome").writeText("Welcome to my Portfolio!");
-	});
-	
-	(function($) {
-		$.fn.writeText = function(content) {
-			var contentArray = content.split(""),
-			current = 0,
-			elem = this;
-			setInterval(function() {
-				if(current < contentArray.length) {
-					elem.text(elem.text() + contentArray[current++]);
-				}
-			}, 100);
-		};
-	})(jQuery);
-	
-	
-	</script>
+	<script src="./js/port_js.js"></script>
   
   </body>
 </html>
