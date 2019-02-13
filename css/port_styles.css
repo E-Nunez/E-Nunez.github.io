@@ -140,6 +140,104 @@ ul {
 }
 
 /*===========================
+	WEATHER <DIV>
+=============================*/
+#weatherbg {
+    height: 325px;
+    width: 350px;
+    border: 4px solid #000;
+    border-radius: 10px;
+    background-image: url("../img/default.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+    text-shadow: 2px 2px 1px #000;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    position: relative;
+    top: 375px;
+    right: 20px;
+    float: right;
+}
+
+#weatherContainer {
+    height: 200px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 1px 5px #000;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 15px;
+    visibility: hidden;
+}
+
+#weatherContainer h1 {
+    margin: 5px;
+    font-size: 24px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#searchContainer {
+    padding: 15px 0 15px 30px;
+    position: absolute;
+    top: 25px;
+}
+
+#searchContainer input {
+    width:200px;
+}
+
+#searchContainer input:focus {
+    border: none;
+}
+
+#searchContainer button {
+    background-color: rgb(1, 159, 198);
+    width: 75px;
+}
+
+.searchControl {
+    box-shadow: 2px 2px 5px #000;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#searchBtn:hover {
+    cursor: pointer;
+}
+
+#weatherMain {
+    display: block;
+    margin-bottom: 20px;
+}
+
+#weatherMain div {
+    display: inline-block;
+}
+#weatherDescriptionHeader {
+    font-size: 15px;
+    vertical-align: 50%;
+}
+
+#temperature {
+    font-size: 20px;
+    vertical-align: 25%;
+}
+
+.bottomDetails {
+    display: block;
+    font-size: 18px;
+    text-align: right;
+}
+
+#weatherDescription hr {
+    border: 1px solid #fff;
+    box-shadow: 2px 2px 5px #000;
+}
+
+
+/*===========================
 	CARD GROUP (DEVELOPER SKILLS)
 =============================*/
 .devskills {

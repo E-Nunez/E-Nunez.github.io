@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
 	<title>Eric Nu&ntilde;ez</title>
@@ -54,7 +54,7 @@
 		<!-- Jumbotron -->
 		<section class="target" id="matrix">
 			<h1 class="display-1" id="hello" >"Hello, World!"</h1><span class="text-white" id="welcome"><p class="pt-3"></p></span>
-			<p class="sd">-Software Developer</p>
+			<p class="sd">-Software/Web Developer</p>
 			<h1 class= "text-white float-right" style="position: relative; bottom: 30px; margin-right: 40px; border: 5px solid #fff">Eric Nu&ntilde;ez</h1>
 			<div class="google">
 					<p class="text-white text-center" style="margin-bottom: -15px; font-size: 13px; font-weight: bold;">Need to Google something while you're on here?<br> Go right ahead!</p><br>
@@ -63,6 +63,33 @@
 						<button type="submit" class="btn btn-outline-success ml-2">Search</button>
 					</form>
 			</div>
+
+            <div id="weatherbg">
+                <div>
+                    <h1 class="text-center" style="text-decoration: underline;">Weather</h1>
+                </div>
+                <div id="searchContainer">
+                    <input class="searchControl" type="text" placeholder="City Name or Zipcode" id="searchInput" />
+                    <button class="searchControl" id="searchBtn">Search</button>
+                </div>
+                <div id="weatherContainer">
+                    <div id="weatherDescription">
+                        <h1 id="cityHeader"></h1>
+                        <div id="weatherMain">
+                            <div id="temperature"></div>
+                            <div id="weatherDescriptionHeader"></div>
+                            <div><img id="documentIconImg" /></div>
+                        </div>
+                        <hr />
+                        <div id="windSpeed" class="bottomDetails"></div>
+                        <div id="humidity" class="bottomDetails"></div>
+                    </div>
+                </div>
+                <div id="weatherMsg">
+                    <h1 class="text-center" style="margin-top: 75px; font-size: 50px;">Check your Weather!</h1>
+                </div>
+            </div>
+
 		</section>
 		<!-- /Jumbotron -->
 		
@@ -251,11 +278,11 @@
 			<div id="contact">
 				<div class="form-header">Contact Me</div>
 				<form>
-			<center><input type="text" class="txt" id="" placeholder="Name"></input><br>
-					<input type="text" class="txt" id="" placeholder="Email"></input><br>
-					<input type="text" class="txt" id="" placeholder="Phone #"></input><br>
-					<input type="text" class="txt" id="" placeholder="Project"></input><br>
-					<input type="text" class="msg" id="" placeholder="Message"></input></center>
+			<center><input type="text" class="txt" id="" placeholder="Name"><br>
+					<input type="text" class="txt" id="" placeholder="Email"><br>
+					<input type="text" class="txt" id="" placeholder="Phone #"><br>
+					<input type="text" class="txt" id="" placeholder="Project"><br>
+					<input type="text" class="msg" id="" placeholder="Message"></center>
 					<button type="button" class="btn contact_btn">Submit</button>
 				</form>
 			</div>
