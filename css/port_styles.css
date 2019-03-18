@@ -139,6 +139,14 @@ ul {
 	width: 220px;
 }
 
+#nameLogo h1 {
+    position: relative;
+    float: right;
+    bottom: 30px;
+    margin-right: 40px;
+    color: #fff;
+}
+
 /*===========================
 	WEATHER <DIV>
 =============================*/
@@ -241,12 +249,14 @@ ul {
 	CARD GROUP (DEVELOPER SKILLS)
 =============================*/
 .devskills {
-	height: 900px;
+    height: 900px;
+    background-color: rgba(28, 37, 40, 1);
+    border-top: 3px solid #fff;
 }
 
 #skills {
 	font-family: "Times New Roman";
-	color: #fffc;
+	color: #fff;
 	text-shadow:
        3px 3px 0 #000,
      -1px -1px 0 #000,  
@@ -256,7 +266,7 @@ ul {
 	text-align: center;
 	font-weight: bold;
 	text-decoration: underline;
-	padding: 75px 0 50px 0;
+	padding: 50px 0 50px 0;
 }
 .card-group .card-body {
 	height: 250px;
@@ -273,32 +283,46 @@ ul {
 	text-decoration: underline overline;
 }
 
+.card-body .card-text {
+    text-align: center;
+}
+
 /*===========================
 	SLIDESHOW (PROJECTS)
 =============================*/
 #project {
-	background-color: rgb(100,100,100);
-	height: 900px;
+    height: 900px;
+    background-color: rgba(28, 37, 40, 1);
+    border-top: 3px solid #fff;
+}
+
+.skillText {
+    font-family: "Times New Roman";
+	color: #fff;
+	text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: underline;
+	padding: 50px 0 50px 0;
 }
 
 .carousel-item img {
 	width: auto;
 	height: 550px;
-	margin-top: 130px;
-}
-
-/*===========================
-	EDUCATION
-=============================*/
-#edu {
-	height: 900px;
 }
 
 /*===========================
 	FORM (CONTACT)
 =============================*/
 #contact_me {
-	height: 900px;
+    height: 900px;
+    background-color: rgba(28, 37, 40, 1);
+    border-top: 3px solid #fff;
 }
 
 #contact {
