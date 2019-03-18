@@ -258,13 +258,13 @@
 		<section class="target" id="contact_me">
 			<div id="contact">
 				<div class="form-header">Contact Me</div>
-				<form>
-			<center><input type="text" class="txt" id="" placeholder="Name"><br>
-					<input type="text" class="txt" id="" placeholder="Email"><br>
-					<input type="text" class="txt" id="" placeholder="Phone #"><br>
-					<input type="text" class="txt" id="" placeholder="Project"><br>
-					<input type="text" class="msg" id="" placeholder="Message"></center>
-					<button type="button" class="btn contact_btn">Submit</button>
+				<form action="contactform.php" method="post">
+			<center><input type="text" class="txt" name="name" placeholder="Name"><br>
+					<input type="text" class="txt" name="mail" placeholder="Email"><br>
+					<input type="text" class="txt" name="phone" placeholder="Phone #"><br>
+					<input type="text" class="txt" name="project" placeholder="Project"><br>
+					<textarea class="msg" name="message" placeholder="Message"></textarea></center>
+					<button type="submit" class="btn contact_btn">Submit</button>
 				</form>
 			</div>
 		</section>

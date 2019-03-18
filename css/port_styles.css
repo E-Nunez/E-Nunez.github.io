@@ -353,7 +353,7 @@ form {
 	border-radius: 0 0 13px 13px;
 }
 
-input {
+input, .msg {
 	width: 75%;
 	font-family: caption;
 	font-size: 18px;
@@ -363,11 +363,10 @@ input {
 }
 
 .msg {
-	height: 125px;
-	padding-bottom: 100px;
+	height: 105px;
 }
 
-input:focus {
+input:focus, .msg:focus {
 	border: 5px inset #aaa;
 	font-style: italic;
 }
