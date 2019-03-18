@@ -139,12 +139,84 @@ ul {
 	width: 220px;
 }
 
+section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 5px;
+    width: 350px;
+    height: 100px;
+    background: linear-gradient(to right, #f00,#f00,#0f0, #0ff,#ff0,#0ff);
+    mix-blend-mode: color;
+    pointer-events: none;
+}
+
+video {
+    object-fit: cover;
+    position: absolute;
+    top: 25px;
+    right: 5px;
+    height: 50px;
+    width: 350px;
+}
+
 #nameLogo h1 {
-    position: relative;
-    float: right;
-    bottom: 30px;
-    margin-right: 40px;
+    position: absolute;
+    top: 50px;
+    right: 10px;
     color: #fff;
+    font-weight: bold;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Times New Roman', sans-serif;
+}
+
+#nameLogo h1 span {
+    opacity: 0;
+    display: inline-block;
+    animation: animate 1s linear forwards;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(5px);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0px);
+    }
+}
+
+#nameLogo h1 span:nth-child(1) {
+    animation-delay: 1s;
+}
+#nameLogo h1 span:nth-child(2) {
+    animation-delay: 2s;
+}
+#nameLogo h1 span:nth-child(3) {
+    animation-delay: 2.5s;
+}
+#nameLogo h1 span:nth-child(4) {
+    animation-delay: 3s;
+}
+#nameLogo h1 span:nth-child(5) {
+    animation-delay: 3.5s;
+}
+#nameLogo h1 span:nth-child(6) {
+    animation-delay: 4s;
+}
+#nameLogo h1 span:nth-child(7) {
+    animation-delay: 4.5s;
+}
+#nameLogo h1 span:nth-child(8) {
+    animation-delay: 5s;
+}
+#nameLogo h1 span:nth-child(9) {
+    animation-delay: 5.5s;
 }
 
 /*===========================
